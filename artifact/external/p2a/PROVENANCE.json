@@ -1,0 +1,12 @@
+{
+  "source_repository": "/Users/darellplascencia/p2a-rank-one-commutator-tree-mixing-pgl2",
+  "head": "e76bb83118483659d1d2ecff061cdb2d853fbddd",
+  "date": "2026-09-26",
+  "source_state": "Current working-tree files copied byte-for-byte; hashes identify copied versions.",
+  "source_license_file": null,
+  "purpose": "Reproduce numerical double-coset evidence; no analytic proof in P1 depends on these experiments.",
+  "files": {
+    "scripts/s4_allpairs_doublecoset_audit.py": "69460cf3f92eaf3fca8f031c584564285cbe7dfb428ada7abad8df5de1d00c18",
+    "scripts/s4_family_exact_sup.py": "883269a923c5ecf21b5f59f91e000bf87391124902384770f1952f3f689b66b8"
+  }
+}

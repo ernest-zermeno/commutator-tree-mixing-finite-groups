@@ -1,0 +1,53 @@
+\begin{proposition}[Comparison with the leaf Cayley walk]
+\label{prop:cayley-comparison}
+Let $s_1,\ldots,s_N$ be involutions in a finite group $G$, listed with
+multiplicity and $N\ge1$. On $\ell^2_0(G)$ let $R$ be the regular
+representation and put
+\[
+P_i=\tfrac12(I+R(s_i)),\qquad T=P_N\cdots P_1,\qquad
+A=\frac1N\sum_{i=1}^N P_i,\qquad \delta=1-\opn A.
+\]
+Then
+\[
+\frac{2\delta}{N+1}\ \le\ 1-\opn T^2\ \le\ \min\{1,4N\delta\}.
+\]
+Here $A$ is the positive semidefinite transition operator of the lazy
+Cayley walk with the indicated multiplicities. The assertions include
+$\delta=0$, which occurs exactly when the leaves generate a proper subgroup.
+\end{proposition}
+\begin{proof}
+For a unit vector $v$ write $w_0=v$, $w_i=P_iw_{i-1}$ and
+$e_i=(I-P_i)w_{i-1}$. Orthogonality gives
+$\sum_i\norm{e_i}^2=1-\norm{Tv}^2$. Also
+\[
+\norm{(I-P_i)v}\le\sum_{j\le i}\norm{e_j},\qquad
+\sum_i\norm{(I-P_i)v}^2
+\le\frac{N(N+1)}2\sum_j\norm{e_j}^2.
+\]
+Since $I-A\ge\delta I$, the left sum is at least $N\delta$.
+Choose $v$ attaining $\opn T$ to obtain the lower bound.
+For the upper bound choose a unit eigenvector $v$ of $I-A$ with
+eigenvalue $\delta$. Gao's projection union bound, in the form
+\cite[Lemma 2]{AnshuAradVidick2016}, gives
+\[
+\norm{Tv}^2\ge1-4\sum_i\norm{(I-P_i)v}^2=1-4N\delta.
+\]
+The additional bound by $1$ follows from $\opn T^2\ge0$.
+\end{proof}
+
+\begin{corollary}[Bounded-depth uniformity]
+\label{cor:bounded-depth-gap}
+For a family of involutive independent-read blocks with uniformly bounded
+expanded length $N$, their operator norms on $\ell^2_0(G)$ are uniformly
+bounded below $1$ if and only if the associated lazy Cayley walks have
+uniformly positive spectral gaps. In a level-$k$ block $N=4^k$;
+the walk uses the expanded occurrences, equivalently the $2^k$ leaf
+positions with their multiplicities. Thus the assertion applies to
+uniformly bounded depths, and asserts no such equivalence with uniform
+constants when depths are unbounded.
+\end{corollary}
+\begin{proof}
+Both implications follow from \Cref{prop:cayley-comparison}; the regular
+representation contains every non-trivial irreducible, so its norm on
+$\ell^2_0(G)$ is the maximum of their norms.
+\end{proof}

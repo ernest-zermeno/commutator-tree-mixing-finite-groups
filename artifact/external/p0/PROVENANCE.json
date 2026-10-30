@@ -1,0 +1,8 @@
+{
+  "repository": "p0-corregido-uniform-mixing-fixed-template-barrington-branching-programs",
+  "commit": "0b8b37bdfd9ef1bcd2c671278fa8ffab2eea22fc",
+  "source": "completo-iacr/scripts/20_level3_exact_certificate.py",
+  "sha256": "abced911b3fbaf84afce35bb4b5cd6f323c004c5847d90b2f670272b8d51f2df",
+  "unchanged": true,
+  "result": "P0 external input: lambda <= 71/2000, 9447840 oriented configurations"
+}

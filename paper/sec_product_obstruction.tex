@@ -1,0 +1,34 @@
+\begin{corollary}[An obstruction from product quotients]
+\label{cor:product-obstruction}
+Suppose a finite group $G$ has a quotient $A\times B$, with $A$ non-solvable
+and $B$ non-cyclic. Every conjugation-closed generating leaf set of $G$
+then has a permanent obstruction in the configurable model.
+\end{corollary}
+\begin{proof}
+First suppose $G=A\times B$ and let $\mathcal C$ generate $G$.
+The first projection of $\mathcal C$ generates $A$, so some $(a,b)\in\mathcal C$
+has $a\notin O_\infty(A)$. The normal closure of $a$ in $A$ is non-solvable:
+otherwise it would be contained in the solvable radical.
+Conjugation-closure implies
+\[
+S=\{(xax^{-1},b):x\in A\}\subseteq\mathcal C.
+\]
+The group $H=\langle S\rangle$ projects onto that non-solvable normal closure,
+while $H\le A\times\langle b\rangle<A\times B$ since $B$ is non-cyclic.
+Thus $H$ is a proper non-solvable $\mathcal C$-generated subgroup.
+For a quotient of $G$, apply this argument to the image leaf set and
+then lift the obstruction by \Cref{prop:quotient}.
+\end{proof}
+
+The non-cyclic hypothesis cannot simply be omitted. For example, let
+$G=A_5\times C_2$ and take
+$\mathcal C=\{(t,z):t\in A_5\text{ an involution}\}$, where $z$ generates $C_2$.
+This class generates $G$: a subgroup projecting onto $A_5$ with trivial
+kernel would be the graph of a homomorphism $A_5\to C_2$, which cannot
+contain such leaves. Similarly, a proper $\mathcal C$-generated subgroup
+cannot project onto all of $A_5$ and is therefore contained in $K\times C_2$
+for a proper involution-generated $K<A_5$. These $K$ have derived length
+at most $2$ by \Cref{cor:A5}; the bound is attained by lifting the
+involutions of an $S_3$ along its sign character. Hence this class has
+exact level $2$. In contrast, $A_5\times(C_2\times C_2)$ admits no mixing
+conjugation-closed generating class.

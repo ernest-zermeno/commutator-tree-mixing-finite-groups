@@ -1,0 +1,454 @@
+{
+ "python": "3.9.6",
+ "numpy": "2.0.2",
+ "sympy": "1.14.0",
+ "results": [
+  {
+   "q": 5,
+   "group_order": 120,
+   "K_order": 6,
+   "adjoint_det_one_checked_on_all_of_G": true,
+   "adjoint_dictionary": "A -> signed permutations det 1; V diagonal; K = sgn(pi)P_pi; h -> (2/3)J - I",
+   "cosets": 5,
+   "double_cosets_nontrivial": 1,
+   "intersection_census": {
+    "6": 1
+   },
+   "unique_order_six_double_coset_is_AhA": true,
+   "subgroups_B_with_intersection_six": 4,
+   "N_G_V": 24,
+   "N_G_A": 24,
+   "C_G_A": 1,
+   "C_G_K": "{1, h}",
+   "N_G_K": 12,
+   "c_q_interval": [
+    "1/4",
+    "1/4"
+   ],
+   "natural_quotient_size": 2,
+   "natural_charpoly_factors": [
+    [
+     "z + 1",
+     1
+    ]
+   ],
+   "natural_extremal_root_sign": "negative",
+   "natural_extremal_root_isolating_interval": [
+    "-1",
+    "-1"
+   ],
+   "natural_extremal_root_minimal_polynomial": "z + 1",
+   "natural_extremal_root_minimal_polynomial_degree": 1,
+   "c_q_certified_20_digits_rounded": "0.25000000000000000000",
+   "c_q_exact": "1/4",
+   "c_q_dense_numeric": 0.25,
+   "quotient_contains_all_distinct_eigenvalues": true,
+   "allpairs_max_norm": 0.25,
+   "allpairs_max_at_intersection_order": 6,
+   "allpairs_max_by_intersection_order": {
+    "6": 0.25
+   },
+   "allpairs_dense_cross_check": true,
+   "seconds": 0.1
+  },
+  {
+   "q": 11,
+   "group_order": 1320,
+   "K_order": 6,
+   "adjoint_det_one_checked_on_all_of_G": true,
+   "adjoint_dictionary": "A -> signed permutations det 1; V diagonal; K = sgn(pi)P_pi; h -> (2/3)J - I",
+   "cosets": 55,
+   "double_cosets_nontrivial": 5,
+   "intersection_census": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "6": 1
+   },
+   "unique_order_six_double_coset_is_AhA": true,
+   "subgroups_B_with_intersection_six": 4,
+   "N_G_V": 24,
+   "N_G_A": 24,
+   "C_G_A": 1,
+   "C_G_K": "{1, h}",
+   "N_G_K": 12,
+   "c_q_interval": [
+    "3784796725797431/5541326999208104",
+    "2185153408467161/3199286634660540"
+   ],
+   "natural_quotient_size": 6,
+   "natural_charpoly_factors": [
+    [
+     "z + 2",
+     1
+    ],
+    [
+     "z**2 - 3*z + 1",
+     1
+    ],
+    [
+     "z**2 + 2*z - 2",
+     1
+    ]
+   ],
+   "natural_extremal_root_sign": "negative",
+   "natural_extremal_root_isolating_interval": [
+    "-80198051/29354524",
+    "-138907099/50843527"
+   ],
+   "natural_extremal_root_minimal_polynomial": "z**2 + 2*z - 2",
+   "natural_extremal_root_minimal_polynomial_degree": 2,
+   "c_q_certified_20_digits_rounded": "0.68301270189221932338",
+   "c_q_exact": "1/4 + sqrt(3)/4",
+   "c_q_dense_numeric": 0.683012701892,
+   "quotient_contains_all_distinct_eigenvalues": true,
+   "allpairs_max_norm": 0.683013,
+   "allpairs_max_at_intersection_order": 6,
+   "allpairs_max_by_intersection_order": {
+    "1": 0.25,
+    "2": 0.321175,
+    "3": 0.591506,
+    "4": 0.539345,
+    "6": 0.683013
+   },
+   "allpairs_dense_cross_check": true,
+   "seconds": 0.6
+  },
+  {
+   "q": 13,
+   "group_order": 2184,
+   "K_order": 6,
+   "adjoint_det_one_checked_on_all_of_G": true,
+   "adjoint_dictionary": "A -> signed permutations det 1; V diagonal; K = sgn(pi)P_pi; h -> (2/3)J - I",
+   "cosets": 91,
+   "double_cosets_nontrivial": 7,
+   "intersection_census": {
+    "1": 2,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "6": 1
+   },
+   "unique_order_six_double_coset_is_AhA": true,
+   "subgroups_B_with_intersection_six": 4,
+   "N_G_V": 24,
+   "N_G_A": 24,
+   "C_G_A": 1,
+   "C_G_K": "{1, h}",
+   "N_G_K": 12,
+   "c_q_interval": [
+    "3/4",
+    "3/4"
+   ],
+   "natural_quotient_size": 8,
+   "natural_charpoly_factors": [
+    [
+     "z - 1",
+     1
+    ],
+    [
+     "z",
+     1
+    ],
+    [
+     "z + 1",
+     1
+    ],
+    [
+     "z + 3",
+     1
+    ],
+    [
+     "z**3 - 3*z**2 - 4*z + 13",
+     1
+    ]
+   ],
+   "natural_extremal_root_sign": "negative",
+   "natural_extremal_root_isolating_interval": [
+    "-3",
+    "-3"
+   ],
+   "natural_extremal_root_minimal_polynomial": "z + 3",
+   "natural_extremal_root_minimal_polynomial_degree": 1,
+   "c_q_certified_20_digits_rounded": "0.75000000000000000000",
+   "c_q_exact": "3/4",
+   "c_q_dense_numeric": 0.75,
+   "quotient_contains_all_distinct_eigenvalues": true,
+   "allpairs_max_norm": 0.75,
+   "allpairs_max_at_intersection_order": 6,
+   "allpairs_max_by_intersection_order": {
+    "1": 0.307668,
+    "2": 0.5,
+    "3": 0.561745,
+    "4": 0.600646,
+    "6": 0.75
+   },
+   "allpairs_dense_cross_check": true,
+   "seconds": 0.9
+  },
+  {
+   "q": 19,
+   "group_order": 6840,
+   "K_order": 6,
+   "adjoint_dictionary": "A -> signed permutations det 1; V diagonal; K = sgn(pi)P_pi; h -> (2/3)J - I",
+   "cosets": 285,
+   "double_cosets_nontrivial": 17,
+   "intersection_census": {
+    "1": 9,
+    "2": 3,
+    "3": 2,
+    "4": 2,
+    "6": 1
+   },
+   "unique_order_six_double_coset_is_AhA": true,
+   "subgroups_B_with_intersection_six": 4,
+   "N_G_V": 24,
+   "N_G_A": 24,
+   "C_G_A": 1,
+   "C_G_K": "{1, h}",
+   "N_G_K": 12,
+   "c_q_interval": [
+    "3416454622906707/4222970155956100",
+    "1055742538989025/1304969544928657"
+   ],
+   "natural_quotient_size": 18,
+   "natural_charpoly_factors": [
+    [
+     "z - 3",
+     1
+    ],
+    [
+     "z + 1",
+     3
+    ],
+    [
+     "z**2 + 2*z - 4",
+     1
+    ],
+    [
+     "z**2 - 7",
+     2
+    ],
+    [
+     "z**3 - 3*z + 1",
+     1
+    ],
+    [
+     "z**4 - 2*z**3 - 6*z**2 + 12*z - 4",
+     1
+    ]
+   ],
+   "natural_extremal_root_sign": "negative",
+   "natural_extremal_root_isolating_interval": [
+    "-126491972/39088169",
+    "-102334155/31622993"
+   ],
+   "natural_extremal_root_minimal_polynomial": "z**2 + 2*z - 4",
+   "natural_extremal_root_minimal_polynomial_degree": 2,
+   "c_q_certified_20_digits_rounded": "0.80901699437494742410",
+   "c_q_exact": "1/4 + sqrt(5)/4",
+   "c_q_dense_numeric": 0.809016994375,
+   "quotient_contains_all_distinct_eigenvalues": true,
+   "allpairs_max_norm": 0.809017,
+   "allpairs_max_at_intersection_order": 6,
+   "allpairs_max_by_intersection_order": {
+    "1": 0.440959,
+    "2": 0.539345,
+    "3": 0.75971,
+    "4": 0.666667,
+    "6": 0.809017
+   },
+   "allpairs_dense_cross_check": true,
+   "seconds": 3.2
+  },
+  {
+   "q": 29,
+   "group_order": 24360,
+   "K_order": 6,
+   "adjoint_dictionary": "A -> signed permutations det 1; V diagonal; K = sgn(pi)P_pi; h -> (2/3)J - I",
+   "cosets": 1015,
+   "double_cosets_nontrivial": 51,
+   "intersection_census": {
+    "1": 37,
+    "2": 6,
+    "3": 4,
+    "4": 3,
+    "6": 1
+   },
+   "unique_order_six_double_coset_is_AhA": true,
+   "subgroups_B_with_intersection_six": 4,
+   "N_G_V": 24,
+   "N_G_A": 24,
+   "C_G_A": 1,
+   "C_G_K": "{1, h}",
+   "N_G_K": 12,
+   "c_q_interval": [
+    "504306637249803/590273345323070",
+    "261074481383963539/305578582795179976"
+   ],
+   "natural_quotient_size": 52,
+   "natural_charpoly_factors": [
+    [
+     "z - 3",
+     1
+    ],
+    [
+     "z - 1",
+     1
+    ],
+    [
+     "z + 1",
+     1
+    ],
+    [
+     "z + 3",
+     2
+    ],
+    [
+     "z - 2",
+     3
+    ],
+    [
+     "z**2 - z - 1",
+     1
+    ],
+    [
+     "z**3 - 2*z**2 - z + 1",
+     1
+    ],
+    [
+     "z**3 + 4*z**2 + 3*z - 1",
+     2
+    ],
+    [
+     "z**4 + 2*z**3 - 6*z**2 - 7*z + 1",
+     1
+    ],
+    [
+     "z**6 - 2*z**5 - 13*z**4 + 17*z**3 + 52*z**2 - 32*z - 64",
+     2
+    ],
+    [
+     "z**8 - z**7 - 18*z**6 + 17*z**5 + 95*z**4 - 77*z**3 - 128*z**2 + 51*z + 31",
+     2
+    ]
+   ],
+   "natural_extremal_root_sign": "positive",
+   "natural_extremal_root_isolating_interval": [
+    "612407628/179200447",
+    "594829003/174056655"
+   ],
+   "natural_extremal_root_minimal_polynomial": "z**6 - 2*z**5 - 13*z**4 + 17*z**3 + 52*z**2 - 32*z - 64",
+   "natural_extremal_root_minimal_polynomial_degree": 6,
+   "c_q_certified_20_digits_rounded": "0.85436118917716762327",
+   "c_q_dense_numeric": 0.854361189177,
+   "quotient_contains_all_distinct_eigenvalues": true,
+   "allpairs_max_norm": 0.854361,
+   "allpairs_max_at_intersection_order": 6,
+   "allpairs_max_by_intersection_order": {
+    "1": 0.574642,
+    "2": 0.646892,
+    "3": 0.811745,
+    "4": 0.7276,
+    "6": 0.854361
+   },
+   "allpairs_dense_cross_check": false,
+   "seconds": 10.8
+  },
+  {
+   "q": 37,
+   "group_order": 50616,
+   "K_order": 6,
+   "adjoint_dictionary": "A -> signed permutations det 1; V diagonal; K = sgn(pi)P_pi; h -> (2/3)J - I",
+   "cosets": 2109,
+   "double_cosets_nontrivial": 99,
+   "intersection_census": {
+    "1": 81,
+    "2": 8,
+    "3": 5,
+    "4": 4,
+    "6": 1
+   },
+   "unique_order_six_double_coset_is_AhA": true,
+   "subgroups_B_with_intersection_six": 4,
+   "N_G_V": 24,
+   "N_G_A": 24,
+   "C_G_A": 1,
+   "C_G_K": "{1, h}",
+   "N_G_K": 12,
+   "c_q_interval": [
+    "4431177926343251/5239958347821824",
+    "5950625304260445/7036735887414676"
+   ],
+   "natural_quotient_size": 100,
+   "natural_charpoly_factors": [
+    [
+     "z - 2",
+     2
+    ],
+    [
+     "z + 2",
+     2
+    ],
+    [
+     "z**2 - 3*z - 1",
+     2
+    ],
+    [
+     "z**2 - z - 5",
+     2
+    ],
+    [
+     "z**2 + z - 1",
+     2
+    ],
+    [
+     "z**2 + 2*z - 2",
+     4
+    ],
+    [
+     "z**3 - 8*z + 4",
+     3
+    ],
+    [
+     "z**3 - 3*z + 1",
+     3
+    ],
+    [
+     "z**6 - 15*z**4 + z**3 + 60*z**2 - 64",
+     2
+    ],
+    [
+     "z**9 + 7*z**8 + 7*z**7 - 45*z**6 - 100*z**5 + 13*z**4 + 170*z**3 + 139*z**2 + 36*z + 1",
+     1
+    ],
+    [
+     "z**18 - 8*z**17 - 8*z**16 + 209*z**15 - 253*z**14 - 1996*z**13 + 4196*z**12 + 8667*z**11 - 24522*z**10 - 18284*z**9 + 68697*z**8 + 20865*z**7 - 97011*z**6 - 20844*z**5 + 64568*z**4 + 17499*z**3 - 13387*z**2 - 3713*z + 113",
+     2
+    ]
+   ],
+   "natural_extremal_root_sign": "negative",
+   "natural_extremal_root_isolating_interval": [
+    "-110126258/32556637",
+    "-114768221/33928941"
+   ],
+   "natural_extremal_root_minimal_polynomial": "z**9 + 7*z**8 + 7*z**7 - 45*z**6 - 100*z**5 + 13*z**4 + 170*z**3 + 139*z**2 + 36*z + 1",
+   "natural_extremal_root_minimal_polynomial_degree": 9,
+   "c_q_certified_20_digits_rounded": "0.84565136442071691397",
+   "c_q_dense_numeric": 0.845651364421,
+   "quotient_contains_all_distinct_eigenvalues": true,
+   "allpairs_max_norm": 0.845651,
+   "allpairs_max_at_intersection_order": 6,
+   "allpairs_max_by_intersection_order": {
+    "1": 0.577576,
+    "2": 0.69446,
+    "3": 0.737266,
+    "4": 0.791805,
+    "6": 0.845651
+   },
+   "allpairs_dense_cross_check": false,
+   "seconds": 24.8
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.log
+*.aux
+*.out
+*.fls
+*.fdb_latexmk
+*.blg
+*.meta
+*.abstract
+validation-output/

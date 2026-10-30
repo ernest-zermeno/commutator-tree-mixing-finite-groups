@@ -1,0 +1,244 @@
+\section{Uniform rates and the order of the mixing depth}
+\label{sec:quantitative-families}
+
+The dichotomy supplies generating sets at bounded depth. Diameter estimates
+then control their contraction uniformly over all valid templates.
+In particular, the unobstructed exterior
+classes of $\PGL_2(q)$ have base depth $2$ or $3$, uniformly in $q$;
+the issue here is the strength of contraction as the field grows.
+All logarithms in this section are natural
+unless their base is displayed. For a tree $\tau$, the law $\mu_\tau$
+is unconditional.
+
+\begin{theorem}[Diameter-to-mixing transfer]
+\label{thm:family-rate}
+Consider a family of pairs $(G,\mathcal C)$ satisfying case~\textup{(2)} of
+\Cref{thm:dichotomy}, with exact levels $D\le D_0$. Suppose there are
+constants $K,a>0$, independent of the pair, such that every symmetric
+generating set $S$ of $G$ satisfies
+$\mathrm{diam}(G,S)\le K(\log\abs G)^a$.
+Put $c=(8\cdot16^{D_0}K^2)^{-1}$. Every valid configurable tree $\tau$ of
+level $m\ge D$ satisfies
+\begin{equation}\label{eq:family-rate}
+ \dtv(\mu_\tau,U_G)\le\frac{\sqrt{\abs G-1}}2
+       \exp\left(-\frac{c4^m}{(\log\abs G)^{2a}}\right).
+\end{equation}
+For $D_T$, add the conditioning probability $p$ from \Cref{lem:conditioning}.
+The leaves need not be involutions.
+\end{theorem}
+\begin{proof}
+Every sub-block of a valid tree is valid. Its level-$D$ sub-blocks therefore
+generate $G$ by \Cref{thm:dichotomy}. Each has $N=4^D$ expanded occurrences,
+including inverse occurrences. Fix a non-trivial irreducible $\rho$.
+For each level-$D$ sub-block $\tau_0$, \Cref{prop:stability} gives
+\[
+ \opn{M_{\tau_0}(\rho)}\le1-\frac1{8\cdot4^D K^2(\log\abs G)^{2a}}.
+\]
+Expanding the recursion down to this level produces $4^{m-D}$ factors,
+counting adjoints, all with that norm bound. Submultiplicativity and
+$1-x\le e^{-x}$ yield
+\[
+ \opn{M_\tau(\rho)}\le
+ \exp\left(-\frac{4^m}{8\cdot16^D K^2(\log\abs G)^{2a}}\right).
+\]
+Apply Diaconis--Shahshahani as in \Cref{prop:quant}, and use $D\le D_0$.
+\end{proof}
+
+For $0<\eta<1/2$, a sufficient condition for error at most $\eta$ is
+$m\ge D$ and
+\begin{equation}\label{eq:family-accuracy}
+ 4^m\ge c^{-1}(\log\abs G)^{2a}
+       \left(\tfrac12\log(\abs G-1)+\log\frac1{2\eta}\right).
+\end{equation}
+Thus fixed error, or error $\abs G^{-b}$ for fixed $b>0$, requires only
+$O(\log\log\abs G)$ depth and $O((\log\abs G)^{2a+1})$ expanded length.
+
+\begin{proposition}[Support lower bound and optimal order]
+\label{prop:depth-lower}
+For any level-$m$ independent-read tree $\tau$,
+\[
+ \dtv(\mu_\tau,U_G)\ge\max\{0,1-2^{4^m}/\abs G\}.
+\]
+Consequently, for any fixed $0<\eta<1/2$, in an unbounded family satisfying
+\Cref{thm:family-rate}, the least depth at which every valid tree has
+error at most $\eta$ is $\Theta(\log\log\abs G)$, uniformly over the family.
+\end{proposition}
+\begin{proof}
+There are $4^m$ independent input bits, hence at most $2^{4^m}$ possible
+outputs. The complement of their support has uniform mass at least
+$1-2^{4^m}/\abs G$ and output mass zero. Error at most $\eta$ therefore
+requires $4^m\ge\log_2((1-\eta)\abs G)$.
+Valid trees exist at every level by \Cref{lem:central}, since $G$ is
+non-solvable. This rules out vacuous small levels. The upper bound is
+\eqref{eq:family-accuracy}.
+\end{proof}
+
+The upper and lower bounds match in their order of depth, up to constant factors.
+On the obstructed side, the subgroup $H<G$ in \Cref{thm:dichotomy}(1)
+supplies at every level a valid tree $\tau$ supported in $H$, and hence
+$\dtv(\mu_\tau,U_G)\ge1-\abs H/\abs G\ge1/2$.
+
+\begin{corollary}[Rank one and minimal simple groups]
+\label{cor:family-examples}
+The uniform rate \eqref{eq:family-rate} and the optimal order of depth in
+\Cref{prop:depth-lower} apply to:
+\begin{enumerate}[nosep,leftmargin=1.6em]
+\item the unobstructed involution classes of $\PSL_2(q)$ and exterior
+classes of $\PGL_2(q)$ in \Cref{thm:rankone-classification};
+\item all finite minimal simple groups with any non-trivial conjugacy
+class, uniformly over both the group and the class.
+\end{enumerate}
+\end{corollary}
+\begin{proof}
+Pyber--Szab\'o's bounded-rank diameter theorem~\cite[Theorem 2 of the
+preprint]{PyberSzabo2016} supplies constants $K,a$ for every symmetric
+generating set of a simple group of Lie type of bounded rank.
+For $G=\PGL_2(q)$, take a symmetric generating set $S$ and $t\in S$
+outside $L=\PSL_2(q)$. With transversal $\{1,t\}$, Schreier generators
+of $L$ have length at most $3$ in $S$; their inverses satisfy the same
+bound. Writing this symmetric set as $S_L$ gives
+\[
+ \mathrm{diam}(G,S)\le3\,\mathrm{diam}(L,S_L)+1.
+\]
+Thus the same type of diameter bound holds for $G$, with adjusted absolute
+constants. The rank-one levels are at most $3$.
+For (2), Thompson's list in \Cref{cor:minsimple} has bounded Lie rank
+(at most $2$, including the underlying type of the Suzuki groups), and
+\Cref{cor:minsimple} gives $D\le5$. Apply \Cref{thm:family-rate} with
+$D_0=3$ or $5$, respectively, and then \Cref{prop:depth-lower}.
+\end{proof}
+
+\subsection{Uniform expansion outside exceptional primes}
+
+Over prime fields, strong uniform expansion gives constant gaps for every
+generating block of bounded depth. The prime-field input goes back to
+Breuillard--Gamburd~\cite[Corollary 1.1]{BreuillardGamburd2010}.
+Becker--Breuillard~\cite[Theorem 1.1 and Corollary 3.2]{BeckerBreuillard2026}
+extend uniform expansion to bounded-rank families with bounded field degree,
+outside exceptional sets of characteristics.
+
+\begin{corollary}[Uniform gaps for almost all primes]
+\label{cor:almost-all-primes}
+There is a set $\mathcal E$ of relative density zero among the primes
+such that the following hold for every prime $p\ge5$ outside $\mathcal E$.
+\begin{enumerate}[nosep,leftmargin=1.6em]
+\item For each fixed $K\ge1$ there is $a_K>0$, independent of $p$, such that
+every involutive block $\tau$ of level $k\le K$ whose leaves generate
+$G=\PSL_2(p)$ or $\PGL_2(p)$ satisfies
+$\opn{M_\tau(\rho)}\le1-a_K$ for every non-trivial irreducible $\rho$.
+\item Let $\mathcal C$ be an unobstructed involution class from
+\Cref{thm:rankone-classification}: the exterior class in $\PGL_2(p)$,
+or the involution class in an unobstructed $\PSL_2(p)$.
+There is an absolute $c>0$ such that every valid tree $\tau$ of level $m\ge D$
+over $\mathcal C$ satisfies
+\begin{equation}\label{eq:almost-all-prime-rate}
+ \opn{M_\tau(\rho)}\le e^{-c4^m},\qquad
+ \dtv(\mu_\tau,U_G)\le\frac{\sqrt{\abs G-1}}2 e^{-c4^m}.
+\end{equation}
+The operator bound holds for every non-trivial irreducible $\rho$.
+\item If $p\equiv\pm3\pmod8$, every pair of exterior subgroups
+$A,B\cong S_4$ generating $\PGL_2(p)$ satisfies
+$\opn{P_A^\rho P_B^\rho}\le1-b$ for every non-trivial irreducible $\rho$,
+with an absolute $b>0$ independent of the pair and of $p$.
+\end{enumerate}
+\end{corollary}
+\begin{proof}
+Strong uniform expansion supplies $\varepsilon\in(0,1]$ and
+$\mathcal E$ such that $|SX|\ge(1+\varepsilon)|X|$ whenever
+$|X|\le|G|/2$ and $S$ is a symmetric generating set containing $e$,
+for both groups $G$. Starting with
+\cite[Corollary 1.1]{BreuillardGamburd2010}, pass from $\SL_2(p)$ to
+its quotient $\PSL_2(p)$ and then to its index-two overgroup
+$\PGL_2(p)$; uniform expansion is preserved under these operations
+\cite[Lemma 3.9]{BeckerBreuillard2026}. Both sources use vertex
+expansion: the proof of \cite[Corollary 1.1]{BreuillardGamburd2010}
+produces a single $s\in S$ with $|sX\setminus X|\ge c|X|$, and
+\cite[(1.1)]{BeckerBreuillard2026} states the displayed form directly.
+
+For (1), fix such a block $\tau$ and list its $r=2^k$ leaf positions with their multiplicities.
+Their lazy walk assigns each distinct non-identity leaf probability at
+least $1/(2r)$. The expansion inequality gives at least
+$\varepsilon|X|$ outgoing edges from any $X$ with $|X|\le|G|/2$,
+so its conductance is at least $\varepsilon/(2r)$.
+Cheeger's inequality gives spectral gap
+$\delta\ge\varepsilon^2/(8r^2)$, including these multiplicities.
+Each leaf occurs $2^k$ times in the expanded involutive block, so this
+is also its expanded-leaf walk. Put $N=4^k=r^2$. By
+\Cref{prop:cayley-comparison},
+\[
+ 1-\opn{M_\tau(\rho)}^2
+ \ge\frac{\varepsilon^2}{4N(N+1)}.
+\]
+Thus one may take $a_K=\varepsilon^2/(8\cdot4^K(4^K+1))$.
+
+For (2), $D\le3$, and every level-$D$ sub-block of a valid tree $\tau$
+generates $G$ by \Cref{thm:dichotomy}. Applying (1) at this fixed
+base level and expanding the recursion gives
+\[
+ \opn{M_\tau(\rho)}\le(1-a_3)^{4^{m-D}}
+ \le e^{-(a_3/64)4^m}.
+\]
+Take $c=a_3/64$ and apply the Diaconis--Shahshahani bound.
+
+For (3), fix a non-trivial irreducible $\rho$ on $V$, and write
+$P_A=P_A^\rho$, $P_B=P_B^\rho$.
+The walk $\nu=(U_A+U_B)/2$ has generating support
+$A\cup B$ and assigns each support element probability at least $1/48$.
+The same conductance argument gives spectral gap at least
+$\eta=\varepsilon^2/(2\cdot48^2)$. Its Fourier operator is
+$(P_A+P_B)/2$, which is positive semidefinite.
+For a unit vector $v\in V^A$,
+$1+\norm{P_Bv}^2\le2(1-\eta)$.
+Hence $\opn{P_AP_B}\le\sqrt{1-2\eta}\le1-\eta$;
+if $V^A=0$ the norm is zero. Take $b=\eta$.
+\end{proof}
+
+The all-pairs octahedral programme was formulated in the July 2026
+preprint~\cite[Conjectures 6.9 and 7.8, Remark 7.9]{ZermenoRankOneZenodo},
+which posed a sharp angular bound and a uniform non-concentration target.
+\Cref{cor:almost-all-primes} gives qualitative gaps for all generating
+exterior pairs and all ambient-generating level-$2$ involutive blocks
+outside $\mathcal E$.
+
+\subsection{Few exceptional configurations over arbitrary fields}
+
+\begin{corollary}[Exceptional generating blocks at fixed depth]
+\label{cor:few-exceptional-blocks}
+Fix integers $R,k\ge1$ and $\delta>0$.
+There is $a=a(R,k,\delta)>0$ such that, for every finite simple group
+$G(q)$ of Lie type of rank at most $R$, all but at most
+$O_{R,k,\delta}(q^\delta)$ simultaneous $G(q)$-conjugacy classes of
+generating involutive level-$k$ configurations $\tau$ satisfy
+\[
+ \opn{M_\tau(\rho)}\le1-a
+ \qquad\text{for every non-trivial irreducible }\rho.
+\]
+The same conclusion holds for $\PGL_2(q)$, $q\ge4$.
+Restricting to valid configurations, or to specified conjugacy classes
+of involution leaves, preserves this absolute bound on exceptions.
+\end{corollary}
+\begin{proof}
+The dimension-zero theorem of Becker--Breuillard
+\cite[Theorems 1.2 and 4.1]{BeckerBreuillard2026}, with $2^k$ entries,
+gives an expansion constant $\varepsilon=\varepsilon(R,k,\delta)>0$
+outside the stated number of simultaneous conjugacy classes of
+generating tuples. The finite simple groups have the required
+bounded-dimensional algebraic embeddings; $\PGL_2(q)$ is covered
+by Theorem~4.1 in the adjoint group of type $A_1$, since it contains
+$\PSL_2(q)$ and therefore satisfies the density hypothesis of that
+theorem for $q$ large.
+Finitely many small fields are absorbed into the implied constant.
+For an involutive tuple put $N=4^k$. Its lazy leaf walk, with
+multiplicities, has gap at least $\varepsilon^2/(8N)$ by the
+conductance argument in \Cref{cor:almost-all-primes}. By
+\Cref{prop:cayley-comparison} one may take
+$a=\varepsilon^2/(8N(N+1))$, after reducing $\varepsilon$ to at most $1$.
+Conjugating every leaf conjugates the block operator, so the transfer
+respects exactly the equivalence relation counted by the source theorem.
+\end{proof}
+
+Here the depth is fixed and the field degree is unrestricted. The
+exception count is absolute; a relative-density statement in a
+restricted family additionally requires a lower bound on its size.
+The next section obtains the sharp natural-pair constant for every
+prime in its stated congruence classes.
