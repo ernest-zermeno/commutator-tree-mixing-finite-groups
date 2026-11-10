@@ -34,7 +34,7 @@ October 2026 (DOI [10.62056/a69qdkmol](https://doi.org/10.62056/a69qdkmol)).
 
 | Location | Contents |
 |---|---|
-| [paper/main.pdf](paper/main.pdf) | Article (34 pages) |
+| [paper/main.pdf](paper/main.pdf) | Article (35 pages) |
 | [paper/main.tex](paper/main.tex) | LaTeX source of the article (`amsart`), with section files and bibliography |
 | [paper-extended/main.pdf](paper-extended/main.pdf) | Extended version (48 pages) |
 | [paper-extended/main.tex](paper-extended/main.tex) | LaTeX source of the extended version |
@@ -93,7 +93,7 @@ Individual scripts can be run from `artifact/scripts/`.
 
 | Version | Date | Contents |
 |---|---|---|
-| 2.0 | November 2026 | Article (34 pages) with a rewritten introduction and literature review; extended version (48 pages); artifact unchanged |
+| 2.0 | November 2026 | Article (35 pages) with a rewritten introduction and literature review; extended version (48 pages); artifact unchanged |
 | 1.0 | 30 October 2026 | First public version (42 pages) and artifact |
 
 Archived at Zenodo, all versions: DOI
