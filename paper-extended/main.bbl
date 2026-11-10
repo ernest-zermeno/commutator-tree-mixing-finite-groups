@@ -1,0 +1,440 @@
+\begin{thebibliography}{61}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amir et~al.(2025)Amir, Blachar, Ghosh, and Vishne]{AmirMixability}
+Gideon Amir, Guy Blachar, Subhajit Ghosh, and Uzi Vishne.
+\newblock Mixability of finite groups.
+\newblock \emph{Random Structures \& Algorithms}, 67\penalty0 (4):\penalty0
+  e70037, 2025.
+\newblock \doi{10.1002/rsa.70037}.
+
+\bibitem[Angel and Holroyd(2018)]{AngelHolroyd2018}
+Omer Angel and Alexander~E. Holroyd.
+\newblock Perfect shuffling by lazy swaps.
+\newblock \emph{Electron. Commun. Probab.}, 23:\penalty0 1--11, 2018.
+\newblock \doi{10.1214/18-ECP151}.
+\newblock URL \url{https://arxiv.org/abs/1802.05200}.
+\newblock Paper No. 47.
+
+\bibitem[Anshu et~al.(2016)Anshu, Arad, and Vidick]{AnshuAradVidick2016}
+Anurag Anshu, Itai Arad, and Thomas Vidick.
+\newblock A simple proof of the detectability lemma and spectral gap
+  amplification.
+\newblock \emph{Physical Review B}, 93:\penalty0 205142, 2016.
+\newblock \doi{10.1103/PhysRevB.93.205142}.
+\newblock URL \url{https://arxiv.org/abs/1602.01210v2}.
+\newblock Lemma 2 states Gao's projection union bound; Lemma 4 in
+  arXiv:1602.01210v2.
+
+\bibitem[Babai et~al.(2008)Babai, Nikolov, and Pyber]{BabaiNikolovPyber2008}
+L{\'a}szl{\'o} Babai, Nikolay Nikolov, and L{\'a}szl{\'o} Pyber.
+\newblock Product growth and mixing in finite groups.
+\newblock In \emph{Proceedings of the Nineteenth Annual ACM-SIAM Symposium on
+  Discrete Algorithms}, pages 248--257. SIAM, 2008.
+\newblock \doi{10.1145/1347082.1347110}.
+
+\bibitem[Badea et~al.(2010)Badea, Grivaux, and
+  M{\"u}ller]{BadeaGrivauxMuller2010}
+Catalin Badea, Sophie Grivaux, and Vladimir M{\"u}ller.
+\newblock A generalization of the {Friedrichs} angle and the method of
+  alternating projections.
+\newblock \emph{C. R. Math. Acad. Sci. Paris}, 348\penalty0 (1--2):\penalty0
+  53--56, 2010.
+\newblock \doi{10.1016/j.crma.2009.11.018}.
+
+\bibitem[Bandman et~al.(2006)Bandman, Greuel, Grunewald, Kunyavski{\u\i},
+  Pfister, and Plotkin]{Bandman2006}
+Tatiana Bandman, Gert-Martin Greuel, Fritz Grunewald, Boris Kunyavski{\u\i},
+  Gerhard Pfister, and Eugene Plotkin.
+\newblock Identities for finite solvable groups and equations in finite simple
+  groups.
+\newblock \emph{Compos. Math.}, 142\penalty0 (3):\penalty0 734--764, 2006.
+\newblock \doi{10.1112/S0010437X0500179X}.
+
+\bibitem[Barrington(1989)]{Bar89}
+David~A. Barrington.
+\newblock Bounded-width polynomial-size branching programs recognize exactly
+  those languages in {NC}$^1$.
+\newblock \emph{J.~Comput.~Syst.~Sci.}, 38\penalty0 (1):\penalty0 150--164,
+  1989.
+\newblock \doi{10.1016/0022-0000(89)90037-8}.
+
+\bibitem[Becker and Breuillard(2026)]{BeckerBreuillard2026}
+Oren Becker and Emmanuel Breuillard.
+\newblock Uniform expansion in finite groups of {Lie} type.
+\newblock \url{https://arxiv.org/abs/2608.00755}, 2026.
+\newblock Preprint, arXiv:2608.00755v1, 1 August 2026.
+
+\bibitem[Boneh(2013)]{Boneh2013}
+Dan Boneh.
+\newblock A note on {B}arrington's theorem.
+\newblock Research note, Stanford University,
+  \url{https://crypto.stanford.edu/~dabo/pubs/papers/barrington.html}, 2013.
+\newblock Accessed 2 November 2026.
+
+\bibitem[Bourgain and Gamburd(2008{\natexlab{a}})]{BourgainGamburd}
+Jean Bourgain and Alex Gamburd.
+\newblock Uniform expansion bounds for {C}ayley graphs of
+  {$\mathrm{SL}_2(\mathbb{F}_p)$}.
+\newblock \emph{Ann.~of Math.}, 167\penalty0 (2):\penalty0 625--642,
+  2008{\natexlab{a}}.
+\newblock \doi{10.4007/annals.2008.167.625}.
+
+\bibitem[Bourgain and Gamburd(2008{\natexlab{b}})]{BourgainGamburdJEMS2008}
+Jean Bourgain and Alex Gamburd.
+\newblock Expansion and random walks in {$\mathrm{SL}_d(\mathbb Z/p^n\mathbb
+  Z)$}: {I}.
+\newblock \emph{J. Eur. Math. Soc.}, 10\penalty0 (4):\penalty0 987--1011,
+  2008{\natexlab{b}}.
+\newblock \doi{10.4171/JEMS/137}.
+
+\bibitem[Bourgain and Varj{\'u}(2012)]{BourgainVarju2012}
+Jean Bourgain and P{\'e}ter~P. Varj{\'u}.
+\newblock Expansion in {$\mathrm{SL}_d(\mathbb Z/q\mathbb Z)$}, {$q$}
+  arbitrary.
+\newblock \emph{Invent. Math.}, 188\penalty0 (1):\penalty0 151--173, 2012.
+\newblock \doi{10.1007/s00222-011-0345-4}.
+
+\bibitem[Bray et~al.(2005)Bray, Wilson, and Wilson]{BrayWilsonWilson2005}
+John~N. Bray, John~S. Wilson, and Robert~A. Wilson.
+\newblock A characterization of finite soluble groups by laws in two variables.
+\newblock \emph{Bull. London Math. Soc.}, 37\penalty0 (2):\penalty0 179--186,
+  2005.
+\newblock \doi{10.1112/S0024609304003959}.
+
+\bibitem[Breuillard and Gamburd(2010)]{BreuillardGamburd2010}
+Emmanuel Breuillard and Alex Gamburd.
+\newblock Strong uniform expansion in {$\mathrm{SL}(2,p)$}.
+\newblock \emph{Geom. Funct. Anal.}, 20\penalty0 (5):\penalty0 1201--1209,
+  2010.
+\newblock \doi{10.1007/s00039-010-0094-3}.
+\newblock URL \url{https://arxiv.org/abs/0911.3022}.
+\newblock Corollary 1.1 in the preprint arXiv:0911.3022.
+
+\bibitem[Breuillard et~al.(2011)Breuillard, Green, and Tao]{BGT2011}
+Emmanuel Breuillard, Ben Green, and Terence Tao.
+\newblock Approximate subgroups of linear groups.
+\newblock \emph{Geom. Funct. Anal.}, 21\penalty0 (4):\penalty0 774--819, 2011.
+\newblock \doi{10.1007/s00039-011-0122-y}.
+
+\bibitem[Breuillard et~al.(2015)Breuillard, Green, Guralnick, and
+  Tao]{BGGT2015}
+Emmanuel Breuillard, Ben Green, Robert Guralnick, and Terence Tao.
+\newblock Expansion in finite simple groups of {L}ie type.
+\newblock \emph{J. Eur. Math. Soc.}, 17\penalty0 (6):\penalty0 1367--1434,
+  2015.
+\newblock \doi{10.4171/JEMS/533}.
+
+\bibitem[Burness(2019)]{Burness2019}
+Timothy~C. Burness.
+\newblock Simple groups, generation and probabilistic methods.
+\newblock In \emph{Groups {S}t {A}ndrews 2017 in {B}irmingham}, volume 455 of
+  \emph{London Math. Soc. Lecture Note Ser.}, pages 200--229. Cambridge Univ.
+  Press, 2019.
+\newblock \doi{10.1017/9781108692397.009}.
+
+\bibitem[Davidoff et~al.(2003)Davidoff, Sarnak, and Valette]{DSV2003}
+Giuliana Davidoff, Peter Sarnak, and Alain Valette.
+\newblock \emph{Elementary Number Theory, Group Theory and Ramanujan Graphs},
+  volume~55 of \emph{London Mathematical Society Student Texts}.
+\newblock Cambridge University Press, 2003.
+\newblock \doi{10.1017/CBO9780511615825}.
+
+\bibitem[Diaconis(1988)]{Diaconis1988}
+Persi Diaconis.
+\newblock \emph{Group Representations in Probability and Statistics}, volume~11
+  of \emph{IMS Lecture Notes---Monograph Series}.
+\newblock Institute of Mathematical Statistics, Hayward, CA, 1988.
+
+\bibitem[Diaconis and Shahshahani(1981)]{DS81}
+Persi Diaconis and Mehrdad Shahshahani.
+\newblock Generating a random permutation with random transpositions.
+\newblock \emph{Z.~Wahrscheinlichkeitstheorie verw.~Gebiete}, 57:\penalty0
+  159--179, 1981.
+\newblock \doi{10.1007/BF00535487}.
+
+\bibitem[Dixon(1969)]{Dixon1969}
+John~D. Dixon.
+\newblock The probability of generating the symmetric group.
+\newblock \emph{Math. Z.}, 110:\penalty0 199--205, 1969.
+\newblock \doi{10.1007/BF01110210}.
+
+\bibitem[Ersoy et~al.(2014)Ersoy, Tortora, and Tota]{ErsoyTortoraTota2014}
+K{\i}van{\c c} Ersoy, Antonio Tortora, and Maria Tota.
+\newblock On groups with all subgroups subnormal or soluble of bounded derived
+  length.
+\newblock \emph{Glasgow Math. J.}, 56\penalty0 (1):\penalty0 221--227, 2014.
+\newblock \doi{10.1017/S0017089513000190}.
+
+\bibitem[Fern{\'a}ndez-Alcober and Pintonello(2023)]{FernandezPintonello2023}
+Gustavo~A. Fern{\'a}ndez-Alcober and Matteo Pintonello.
+\newblock Conciseness on normal subgroups and new concise words from lower
+  central and derived words.
+\newblock \emph{Journal of the Iranian Mathematical Society}, 4\penalty0
+  (2):\penalty0 189--206, 2023.
+\newblock \doi{10.30504/JIMS.2023.392862.1105}.
+\newblock URL \url{https://arxiv.org/abs/2304.06380v2}.
+\newblock Lemma 2.1(ii) in the author's version, arXiv:2304.06380v2.
+
+\bibitem[Garion and Shalev(2009)]{GarionShalev2009}
+Shelly Garion and Aner Shalev.
+\newblock Commutator maps, measure preservation, and {$T$}-systems.
+\newblock \emph{Trans. Amer. Math. Soc.}, 361\penalty0 (9):\penalty0
+  4631--4651, 2009.
+\newblock \doi{10.1090/S0002-9947-09-04575-9}.
+\newblock URL \url{https://arxiv.org/abs/0708.3664}.
+
+\bibitem[Giudici(2007)]{Giudici2007}
+Michael Giudici.
+\newblock Maximal subgroups of almost simple groups with socle {PSL}(2,q).
+\newblock \url{https://arxiv.org/abs/math/0703685}, 2007.
+
+\bibitem[Gordeev et~al.(2008)Gordeev, Grunewald, Kunyavski{\u\i}, and
+  Plotkin]{GGKP2008}
+Nikolai Gordeev, Fritz Grunewald, Boris Kunyavski{\u\i}, and Eugene Plotkin.
+\newblock A commutator description of the solvable radical of a finite group.
+\newblock \emph{Groups Geom. Dyn.}, 2\penalty0 (1):\penalty0 85--120, 2008.
+\newblock \doi{10.4171/GGD/32}.
+
+\bibitem[Gowers(2008)]{Gowers2008}
+W.~T. Gowers.
+\newblock Quasirandom groups.
+\newblock \emph{Combin. Probab. Comput.}, 17\penalty0 (3):\penalty0 363--387,
+  2008.
+\newblock \doi{10.1017/S0963548307008826}.
+
+\bibitem[Gowers and Viola(2019)]{GowersViola2019}
+W.~T. Gowers and Emanuele Viola.
+\newblock Interleaved group products.
+\newblock \emph{SIAM J. Comput.}, 48\penalty0 (2):\penalty0 554--580, 2019.
+\newblock \doi{10.1137/17M1126783}.
+
+\bibitem[Guralnick et~al.(2006)Guralnick, Kunyavski{\u\i}, Plotkin, and
+  Shalev]{GKPS2006}
+Robert Guralnick, Boris Kunyavski{\u\i}, Eugene Plotkin, and Aner Shalev.
+\newblock Thompson-like characterizations of the solvable radical.
+\newblock \emph{J. Algebra}, 300\penalty0 (1):\penalty0 363--375, 2006.
+\newblock \doi{10.1016/j.jalgebra.2006.03.001}.
+
+\bibitem[Harper and Quick(2026)]{HarperQuick2026}
+Scott Harper and Martyn Quick.
+\newblock The probability of generating finite and profinite groups.
+\newblock \emph{J. Lond. Math. Soc. (2)}, 114\penalty0 (3):\penalty0 e70670,
+  2026.
+\newblock \doi{10.1112/jlms.70670}.
+
+\bibitem[Helfgott(2008)]{Helfgott2008}
+H.~A. Helfgott.
+\newblock Growth and generation in {$\mathrm{SL}_2(\mathbb Z/p\mathbb Z)$}.
+\newblock \emph{Ann. of Math. (2)}, 167\penalty0 (2):\penalty0 601--623, 2008.
+\newblock \doi{10.4007/annals.2008.167.601}.
+
+\bibitem[Hildebrand(1992)]{Hildebrand1992}
+Martin Hildebrand.
+\newblock Generating random elements in {$\mathrm{SL}_n(\mathbb F_q)$} by
+  random transvections.
+\newblock \emph{J. Algebraic Combin.}, 1\penalty0 (2):\penalty0 133--150, 1992.
+\newblock \doi{10.1023/A:1022472220105}.
+
+\bibitem[Huppert(1967)]{Huppert1967}
+Bertram Huppert.
+\newblock \emph{Endliche {G}ruppen {I}}, volume 134 of \emph{Grundlehren Math.
+  Wiss.}
+\newblock Springer, Berlin, 1967.
+
+\bibitem[Kantor and Lubotzky(1990)]{KantorLubotzky1990}
+William~M. Kantor and Alexander Lubotzky.
+\newblock The probability of generating a finite classical group.
+\newblock \emph{Geom. Dedicata}, 36:\penalty0 67--87, 1990.
+\newblock \doi{10.1007/BF00181465}.
+
+\bibitem[Kassabov(2011)]{Kassabov2011}
+Martin Kassabov.
+\newblock Subspace arrangements and property {T}.
+\newblock \emph{Groups Geom. Dyn.}, 5\penalty0 (2):\penalty0 445--477, 2011.
+\newblock \doi{10.4171/GGD/134}.
+
+\bibitem[Kassabov et~al.(2006)Kassabov, Lubotzky, and Nikolov]{KLN2006}
+Martin Kassabov, Alexander Lubotzky, and Nikolay Nikolov.
+\newblock Finite simple groups as expanders.
+\newblock \emph{Proc. Natl. Acad. Sci. USA}, 103\penalty0 (16):\penalty0
+  6116--6119, 2006.
+\newblock \doi{10.1073/pnas.0510337103}.
+
+\bibitem[Kayalar and Weinert(1988)]{KayalarWeinert1988}
+Selahattin Kayalar and Howard~L. Weinert.
+\newblock Error bounds for the method of alternating projections.
+\newblock \emph{Math. Control Signals Systems}, 1\penalty0 (1):\penalty0
+  43--59, 1988.
+\newblock \doi{10.1007/BF02551235}.
+
+\bibitem[Kilian(1988)]{Kilian1988}
+Joe Kilian.
+\newblock Founding cryptography on oblivious transfer.
+\newblock In \emph{Proceedings of the 20th Annual ACM Symposium on Theory of
+  Computing}, pages 20--31. ACM, 1988.
+\newblock \doi{10.1145/62212.62215}.
+
+\bibitem[King(2005)]{King2005}
+Oliver~H. King.
+\newblock The subgroup structure of finite classical groups in terms of
+  geometric configurations.
+\newblock In \emph{Surveys in Combinatorics 2005}, volume 327 of \emph{London
+  Math. Soc. Lecture Note Ser.}, pages 29--56. Cambridge Univ. Press, 2005.
+
+\bibitem[Larsen and Shalev(2009)]{LarsenShalev}
+Michael Larsen and Aner Shalev.
+\newblock Word maps and {W}aring type problems.
+\newblock \emph{J.~Amer.~Math.~Soc.}, 22\penalty0 (2):\penalty0 437--466, 2009.
+\newblock \doi{10.1090/S0894-0347-08-00615-2}.
+
+\bibitem[Larsen and Shalev(2016)]{LarsenShalev2016}
+Michael Larsen and Aner Shalev.
+\newblock A probabilistic {T}its alternative and probabilistic identities.
+\newblock \emph{Algebra Number Theory}, 10\penalty0 (6):\penalty0 1359--1371,
+  2016.
+\newblock \doi{10.2140/ant.2016.10.1359}.
+
+\bibitem[Larsen et~al.(2019)Larsen, Shalev, and Tiep]{LarsenShalevTiep2019}
+Michael Larsen, Aner Shalev, and Pham~Huu Tiep.
+\newblock Probabilistic {W}aring problems for finite simple groups.
+\newblock \emph{Ann. of Math. (2)}, 190\penalty0 (2):\penalty0 561--608, 2019.
+\newblock \doi{10.4007/annals.2019.190.2.3}.
+
+\bibitem[Liebeck and Shalev(1995)]{LiebeckShalev1995}
+Martin~W. Liebeck and Aner Shalev.
+\newblock The probability of generating a finite simple group.
+\newblock \emph{Geom. Dedicata}, 56:\penalty0 103--113, 1995.
+\newblock \doi{10.1007/BF01263616}.
+
+\bibitem[Liebeck and Shalev(1996)]{LiebeckShalev1996}
+Martin~W. Liebeck and Aner Shalev.
+\newblock Simple groups, probabilistic methods, and a conjecture of {K}antor
+  and {L}ubotzky.
+\newblock \emph{J. Algebra}, 184\penalty0 (1):\penalty0 31--57, 1996.
+\newblock \doi{10.1006/jabr.1996.0248}.
+
+\bibitem[Liebeck and Shalev(2005)]{LiebeckShalev2005}
+Martin~W. Liebeck and Aner Shalev.
+\newblock Character degrees and random walks in finite groups of {L}ie type.
+\newblock \emph{Proc. London Math. Soc. (3)}, 90\penalty0 (1):\penalty0 61--86,
+  2005.
+
+\bibitem[Liebeck et~al.(2010)Liebeck, O'Brien, Shalev, and Tiep]{LOST2010}
+Martin~W. Liebeck, E.~A. O'Brien, Aner Shalev, and Pham~Huu Tiep.
+\newblock The {O}re conjecture.
+\newblock \emph{J. Eur. Math. Soc.}, 12\penalty0 (4):\penalty0 939--1008, 2010.
+\newblock \doi{10.4171/JEMS/220}.
+
+\bibitem[Lombardo(2015)]{Lombardo2015}
+Davide Lombardo.
+\newblock Bounds for {Serre}'s open image theorem for elliptic curves over
+  number fields.
+\newblock \emph{Algebra Number Theory}, 9\penalty0 (10):\penalty0 2347--2395,
+  2015.
+\newblock \doi{10.2140/ant.2015.9.2347}.
+\newblock URL \url{https://msp.org/ant/2015/9-10/ant-v9-n10-p06-s.pdf}.
+
+\bibitem[Lubotzky et~al.(1988)Lubotzky, Phillips, and Sarnak]{LPS1988}
+A.~Lubotzky, R.~Phillips, and P.~Sarnak.
+\newblock Ramanujan graphs.
+\newblock \emph{Combinatorica}, 8\penalty0 (3):\penalty0 261--277, 1988.
+\newblock \doi{10.1007/BF02126799}.
+
+\bibitem[Lubotzky and Weiss(1993)]{LubotzkyWeiss1993}
+Alexander Lubotzky and Benjamin Weiss.
+\newblock Groups and expanders.
+\newblock In \emph{Expanding Graphs}, volume~10 of \emph{DIMACS Ser. Discrete
+  Math. Theoret. Comput. Sci.}, pages 95--109. Amer. Math. Soc., Providence,
+  RI, 1993.
+
+\bibitem[Lulov and Pak(2002)]{LulovPak}
+Nathan Lulov and Igor Pak.
+\newblock Rapidly mixing random walks and bounds on characters of the symmetric
+  group.
+\newblock \emph{J.~Algebraic Combin.}, 16\penalty0 (2):\penalty0 151--163,
+  2002.
+
+\bibitem[Miles and Viola(2013)]{MilesViola2013}
+Eric Miles and Emanuele Viola.
+\newblock Shielding circuits with groups.
+\newblock In \emph{Proceedings of the 45th Annual ACM Symposium on Theory of
+  Computing}, pages 251--260. ACM, 2013.
+\newblock \doi{10.1145/2488608.2488640}.
+
+\bibitem[Pyber and Szab{\'o}(2016)]{PyberSzabo2016}
+L{\'a}szl{\'o} Pyber and Endre Szab{\'o}.
+\newblock Growth in finite simple groups of {Lie} type.
+\newblock \emph{J. Amer. Math. Soc.}, 29\penalty0 (1):\penalty0 95--146, 2016.
+\newblock \doi{10.1090/S0894-0347-2014-00821-3}.
+\newblock URL \url{https://arxiv.org/abs/1005.1858v2}.
+\newblock Bounded-rank diameter theorem; Theorem 2 in arXiv:1005.1858v2.
+
+\bibitem[Roichman(1996)]{Roichman1996}
+Yuval Roichman.
+\newblock Upper bound on the characters of the symmetric groups.
+\newblock \emph{Invent. Math.}, 125\penalty0 (3):\penalty0 451--485, 1996.
+\newblock \doi{10.1007/s002220050083}.
+
+\bibitem[Salehi~Golsefidy and Varj{\'u}(2012)]{SalehiVarju}
+Alireza Salehi~Golsefidy and P{\'e}ter~P. Varj{\'u}.
+\newblock Expansion in perfect groups.
+\newblock \emph{Geom.~Funct.~Anal.}, 22\penalty0 (6):\penalty0 1832--1891,
+  2012.
+\newblock \doi{10.1007/s00039-012-0190-7}.
+
+\bibitem[Schul and Shalev(2011)]{SchulShalev2011}
+Gili Schul and Aner Shalev.
+\newblock Words and mixing times in finite simple groups.
+\newblock \emph{Groups Geom. Dyn.}, 5\penalty0 (2):\penalty0 509--527, 2011.
+\newblock \doi{10.4171/GGD/137}.
+
+\bibitem[Shalev(2008)]{Shalev2008}
+Aner Shalev.
+\newblock Mixing and generation in simple groups.
+\newblock \emph{J. Algebra}, 319\penalty0 (7):\penalty0 3075--3086, 2008.
+\newblock \doi{10.1016/j.jalgebra.2007.07.031}.
+
+\bibitem[Shalev(2013)]{Shalev2013}
+Aner Shalev.
+\newblock Some results and problems in the theory of word maps.
+\newblock In \emph{Erd{\H o}s Centennial}, volume~25 of \emph{Bolyai Soc. Math.
+  Stud.}, pages 611--649. Springer, 2013.
+\newblock \doi{10.1007/978-3-642-39286-3_22}.
+
+\bibitem[Thompson(1968)]{Thompson1968}
+John~G. Thompson.
+\newblock Nonsolvable finite groups all of whose local subgroups are solvable.
+\newblock \emph{Bull.~Amer.~Math.~Soc.}, 74:\penalty0 383--437, 1968.
+\newblock \doi{10.1090/S0002-9904-1968-11953-6}.
+
+\bibitem[Wilson et~al.(2001)Wilson, Parker, and Bray]{ATLASL33}
+Robert~A. Wilson, Richard~A. Parker, and John~N. Bray.
+\newblock {ATLAS} of finite group representations: Linear group {$L_3(3)$}.
+\newblock \url{https://brauer.maths.qmul.ac.uk/Atlas/lin/L33/}, 2001.
+\newblock Version 2.0; maximal-subgroup list, accessed 30 October 2026.
+
+\bibitem[Zerme{\~n}o(2026{\natexlab{a}})]{ZermenoRankOneZenodo}
+Ernest~Darell Zerme{\~n}o.
+\newblock Rank-one commutator-tree mixing: involution classes in {PGL}$_2(q)$
+  and direction-mixing geometry.
+\newblock \url{https://doi.org/10.5281/zenodo.21251406}, 2026{\natexlab{a}}.
+\newblock Preliminary working preprint, deposited 7 July 2026; the rank-one
+  classification and natural octahedral pair treated there are incorporated and
+  superseded by the present paper, while Conjectures 6.9 and 7.8, Remark 7.9,
+  and the remaining all-pairs programme are separate.
+
+\bibitem[Zerme{\~n}o(2026{\natexlab{b}})]{ZermenoS5}
+Ernest~Darell Zerme{\~n}o.
+\newblock Uniform mixing in {B}arrington branching programs.
+\newblock \emph{IACR Communications in Cryptology}, 3\penalty0 (3), October
+  2026{\natexlab{b}}.
+\newblock ISSN 3006-5496.
+\newblock \doi{10.62056/a69qdkmol}.
+\newblock Paper No.\ 21.
+
+\end{thebibliography}

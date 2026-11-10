@@ -2,13 +2,53 @@
 \label{sec:octahedral-pair}
 
 We construct a pair of octahedral subgroups whose fixed-space angle is
-controlled by the Ramanujan bound for a quaternionic Cayley walk.
-A compression identity connects the two operators. Throughout, $q$ is a prime,
-$q\equiv\pm3\pmod8$, $q\ne3$, and $G_q=\PGL_2(\F_q)$.
-When a representation $\rho$ is fixed, we write $P_H=P_H^\rho$;
-we retain the superscript when taking maxima over representations.
+controlled by the Ramanujan bound for a quaternionic Cayley walk, and
+show that it is the only pair of its kind up to conjugacy. A compression
+identity connects the two operators.
+
+\subsection{Fixed-space angles and double cosets}
+\label{subsec:hecke-boundary}
+Let $H$ be a subgroup of a finite group $G$ and let $\rho$ be a unitary
+representation of $G$ on $V$. Put
+\[
+  e_H=\frac1{\abs H}\sum_{h\in H}h\in\C[G],
+  \qquad
+  P_H=P_H^\rho=\rho(e_H)=\frac1{\abs H}\sum_{h\in H}\rho(h).
+\]
+When $\rho$ is fixed we omit the superscript; we retain it when taking
+maxima over representations.
+
+\begin{lemma}[Double cosets and angles between fixed spaces]
+\label{cor:double-coset-angle}
+The operator $P_H$ is the orthogonal projection onto $V^H$. For $g\in G$
+and $K=gHg^{-1}$,
+\[
+  P_K=\rho(g)P_H\rho(g)^{-1},
+  \qquad
+  \opn{P_H\rho(g)P_H}=\opn{P_HP_K}.
+\]
+The element $e_Hge_H$ depends only on the double coset $HgH$.
+\end{lemma}
+\begin{proof}
+The average $P_H$ is self-adjoint and idempotent. Its image is $H$-fixed
+by reindexing the sum, and it acts as the identity on every $H$-fixed
+vector. Conjugating the average over $H$ gives the formula for $P_K$, so
+$P_H\rho(g)P_H=P_HP_K\rho(g)$, and right multiplication by the unitary
+$\rho(g)$ preserves the norm. Finally $e_Hh_1gh_2e_H=e_Hge_H$ for
+$h_1,h_2\in H$.
+\end{proof}
+
+Thus $\opn{P_H\rho(g)P_H}$, the norm in $\rho$ of the element of the
+Hecke algebra $e_H\C[G]e_H$ attached to the double coset $HgH$, is the
+cosine of the smallest principal angle between $V^H$ and $V^K$, with
+cosine $0$ when either space is zero. If $\langle H,K\rangle=G$ and
+$\rho$ is non-trivial and irreducible, then $V^H\cap V^K=V^G=0$, and
+this is the Friedrichs angle, which governs the alternation of the two
+projections~\cite{KayalarWeinert1988,BadeaGrivauxMuller2010}.
 
 \subsection{The pair and its four neighbours}
+For the rest of this section $q$ is a prime with $q\equiv\pm3\pmod8$,
+$q\ne3$, and $G_q=\PGL_2(\F_q)$.
 Let $\mathbb H=(-1,-1)_{\mathbb Q}$, with $i^2=j^2=k^2=ijk=-1$,
 and take projective classes in $\mathbb H^\times/\mathbb Q^\times$:
 \[
@@ -88,8 +128,10 @@ is simultaneously conjugate in $G_q$ to $(A,hAh^{-1})$, and for fixed
 $A_1$ there are exactly four such $A_2$.
 \end{proposition}
 \begin{proof}
-The exterior octahedral subgroups form one conjugacy class
-\cite[proof of Proposition~3.4]{Giudici2007}, so we may take $A_1=A$ and
+The exterior octahedral subgroups form one conjugacy class (Dickson's
+classification of the subgroups of $\PSL_2(q)$ and
+$\PGL_2(q)$~\cite{Huppert1967,King2005}; for the statement in this form
+see~\cite[proof of Proposition~3.4]{Giudici2007}), so we may take $A_1=A$ and
 $A_2=gAg^{-1}$ with $g\notin A$, in the orthogonal model of
 \Cref{lem:octahedral-construction}.
 
@@ -250,12 +292,9 @@ proves the limit.
 \subsection{From angles to tree blocks}
 The minimum fixed-space angle $\theta_q=\arccos c_q$ satisfies
 $\theta_q\ge\pi/6$ and $\theta_q\to\pi/6$ by
-\Cref{thm:octahedral-sharp}. Since
-$V_\rho^A\cap V_\rho^B=V_\rho^{G_q}=0$ for every non-trivial irreducible,
-these are Friedrichs angles, with angle $\pi/2$ when a fixed space is zero.
-This angular separation controls how two subgroup averages interact.
-The following estimate transfers it to tree blocks that
-approximate those averages.
+\Cref{thm:octahedral-sharp}. This angular separation controls how the
+averages over $A$ and $B$ interact. The following estimate transfers it
+to configurations whose sub-blocks approximate those averages.
 
 \begin{lemma}[Quantitative gluing]
 \label{lem:octahedral-gluing}
@@ -330,3 +369,50 @@ The sharp angle estimate and the finite $S_4$ certificate thus give the
 explicit contraction bound $\kappa$ for these octahedral blocks. Applying
 \Cref{prop:stability} inside $S_4$ also gives a purely analytic, weaker
 constant in the same corollary.
+
+\subsection{Small primes and the remaining intersection orders}
+\label{subsec:allpairs}
+The values $c_q$ can be computed exactly for small $q$. Every
+eigenspace of the graph $X_q$ in the proof of
+\Cref{thm:octahedral-sharp} is invariant under left translation by
+$G_q$, and each irreducible constituent of $\ell^2(G_q/A)$ has a
+non-zero $A$-fixed vector; hence every eigenvalue of $X_q$ already
+occurs on the functions on $A\backslash G_q/A$. Factoring the integer
+characteristic polynomial of this quotient gives
+\[
+ c_{11}=\frac{1+\sqrt3}{4},\qquad c_{13}=\frac34,\qquad
+ c_{19}=\frac{1+\sqrt5}{4}.
+\]
+
+\begin{table}[!ht]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+$q$ & $11$ & $13$ & $19$ & $29$ & $37$ \\
+\midrule
+All-pairs maximum & $0.683013$ & $0.750000$ & $0.809017$ & $0.854361$ & $0.845651$ \\
+\bottomrule
+\end{tabular}
+\smallskip
+\caption{Numerical all-pairs maxima, to be compared with $\sqrt3/2\approx0.866025$.}
+\label{tab:allpairs-evidence}
+\end{table}
+
+For pairs with $|A\cap B|<6$ no identification with an arithmetic
+operator is available at present. \Cref{tab:allpairs-evidence} records,
+for five primes, the maximum of $\opn{P_A^\rho P_{gAg^{-1}}^\rho}$ over
+all $g\notin A$ and all non-trivial irreducible $\rho$, computed in
+floating point from the operators induced on $A\backslash G_q/A$ by the
+double cosets $AgA$. In each case the maximum is attained by the pairs
+with $|A\cap gAg^{-1}|=6$ and agrees with $c_q$ to the precision shown.
+Since an exterior octahedral subgroup is maximal, any two distinct ones
+generate $G_q$, so these are the quantities in \Cref{conj:allpairs}.
+
+\begin{remark}[Questions]
+\label{rem:octahedral-questions}
+By \Cref{prop:octahedral-cap6}, \Cref{conj:allpairs} concerns the pairs
+with intersection of order $1$, $2$, $3$ or $4$. A weaker question is
+whether the qualitative gap of \Cref{cor:almost-all-primes}, which holds
+for all generating exterior pairs outside a set of primes of relative
+density zero, holds for every prime $q\equiv\pm3\pmod8$.
+\end{remark}

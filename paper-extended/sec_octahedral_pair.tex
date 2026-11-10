@@ -1,0 +1,334 @@
+\section{The natural octahedral pair: a sharp uniform angle}
+\label{sec:octahedral-pair}
+
+We construct a pair of octahedral subgroups whose fixed-space angle is
+controlled by the Ramanujan bound for a quaternionic Cayley walk.
+A compression identity connects the two operators. Throughout, $q$ is a prime,
+$q\equiv\pm3\pmod8$, $q\ne3$, and $G_q=\PGL_2(\F_q)$.
+When a representation $\rho$ is fixed, we write $P_H=P_H^\rho$;
+we retain the superscript when taking maxima over representations.
+
+\subsection{The pair and its four neighbours}
+Let $\mathbb H=(-1,-1)_{\mathbb Q}$, with $i^2=j^2=k^2=ijk=-1$,
+and take projective classes in $\mathbb H^\times/\mathbb Q^\times$:
+\[
+ A_0=\langle i,1+i,1+i+j+k\rangle,\qquad h_0=i+j+k,
+ \qquad S_0=\{\pm i\pm j\pm k\}/\{\pm1\}.
+\]
+The four elements of $S_0$ have norm $3$ and are projective involutions.
+For any odd prime $q$, the quaternion algebra over $\F_q$ is split.
+Indeed, the two sets of squares and of $-1$ minus squares have more
+than $q$ elements in total, so $x^2+y^2=-1$ has a solution; this gives
+an explicit splitting into $M_2(\F_q)$~\cite[Proposition 2.5.2]{DSV2003}.
+Reducing the indicated projective elements defines $A,h,S$ in $G_q$.
+Their norms $1,2,4,3$ are invertible for our primes. Changing the splitting
+conjugates the entire construction, leaving the norms below unchanged.
+
+\begin{lemma}[Octahedral reduction]
+\label{lem:octahedral-construction}
+One has $A\cong S_4$, with exterior transpositions, and
+\[
+ B=hAh^{-1},\quad A\cap B\cong S_3,\quad h^2=1,\quad
+ \langle A,B\rangle=G_q,\quad AhA/A=\{sA:s\in S\}.
+\]
+The last set has four distinct cosets, and $S$ is stable under conjugation
+by $A$.
+\end{lemma}
+\begin{proof}
+On the trace-zero subspace with basis $(i,j,k)$, conjugation by the three
+generators of $A_0$ and by $h_0$ gives, respectively,
+\[
+ \begin{pmatrix}1&0&0\\0&-1&0\\0&0&-1\end{pmatrix},\quad
+ \begin{pmatrix}1&0&0\\0&0&-1\\0&1&0\end{pmatrix},\quad
+ \begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix},\quad
+ H=\frac13\begin{pmatrix}-1&2&2\\2&-1&2\\2&2&-1\end{pmatrix}.
+\]
+The first three generate the $24$ determinant-one signed permutation
+matrices. Their action on the four body diagonals identifies them with
+$S_4$; they remain distinct modulo every odd prime. The adjoint action
+is faithful projectively, also in odd characteristic. Conjugation by
+$\alpha\in\mathbb H(\F_q)^\times$ is $L_\alpha R_{\alpha^{-1}}$ on
+$\mathbb H(\F_q)$, of determinant $N(\alpha)^2N(\alpha)^{-2}=1$ for the
+norm $N$; it fixes $1$ and preserves the norm form, so the adjoint action
+embeds $G_q$ into $\mathrm{SO}_3(\F_q)$. The norm of $1+i$
+is $2$, a nonsquare modulo $q$, so the determinant-square character is
+non-trivial on $A$ and hence is its sign character. In particular the
+transpositions of $A$ are exterior.
+
+Here is a uniform intersection calculation. Let $K$ be the stabilizer in
+$A$ of the line through $(1,1,1)$: its matrices are the positive even
+permutation matrices and the negative odd permutation matrices. Thus
+$K\cong S_3$, and every element of $K$ commutes with $H$.
+Let $V$ be the four diagonal sign matrices of determinant one. Then
+$A=VK$, and $V\cap K=1$. The three non-identity elements of $V$ are
+conjugate under $K$. For $d=\operatorname{diag}(1,-1,-1)$,
+\[
+ HdH=\frac19\begin{pmatrix}-7&-4&-4\\-4&-1&8\\-4&8&-1\end{pmatrix}.
+\]
+Its second row has three nonzero entries modulo every prime $q\ge5$,
+so $HdH\notin A$. Since $H$ commutes with $K$, the same conclusion
+holds for the other two non-identity cosets of $K$ in $A$.
+Therefore $A\cap HAH=K$, in characteristic zero and modulo every
+allowed prime. This also proves $h\notin A$ and $B\ne A$.
+The exterior $S_4$ is maximal in $G_q$ for these primes by
+\cite[Theorem 3.5]{Giudici2007}; hence $\langle A,B\rangle=G_q$.
+
+Finally $H^2=I$, and $A$ acts transitively by conjugation on the four
+body diagonals $S$, with stabilizer $K$. The map
+$A/K\longrightarrow AhA/A$, $aK\mapsto ahA$, is bijective by the
+intersection calculation. Since $(aha^{-1})A=ahA$, its images are
+exactly the four cosets represented by $S$.
+\end{proof}
+
+\begin{proposition}[The intersection-six stratum]
+\label{prop:octahedral-cap6}
+Let $A_1\ne A_2$ be exterior octahedral subgroups of $G_q$. Then
+$|A_1\cap A_2|\le6$. If $|A_1\cap A_2|=6$, the ordered pair $(A_1,A_2)$
+is simultaneously conjugate in $G_q$ to $(A,hAh^{-1})$, and for fixed
+$A_1$ there are exactly four such $A_2$.
+\end{proposition}
+\begin{proof}
+The exterior octahedral subgroups form one conjugacy class (Dickson's
+classification of the subgroups of $\PSL_2(q)$ and
+$\PGL_2(q)$~\cite{Huppert1967,King2005}; for the statement in this form
+see~\cite[proof of Proposition~3.4]{Giudici2007}), so we may take $A_1=A$ and
+$A_2=gAg^{-1}$ with $g\notin A$, in the orthogonal model of
+\Cref{lem:octahedral-construction}.
+
+\emph{Normalisers.} The three non-identity elements of $V$ have the
+coordinate axes as fixed lines, so an element normalising $V$ permutes
+these axes. Orthogonality forces its nonzero entries to be $\pm1$, and
+determinant one leaves the $24$ elements of $A$. Thus $N_{G_q}(V)=A$;
+since $V$ is characteristic in $A$, also $N_{G_q}(A)=A$.
+
+\emph{Orders $8$ and $12$.} Put $D=A\cap A_2$. The determinant-square
+character restricts to the sign character of $A$ and of $A_2$, so
+$A\cap\PSL_2(q)$ and $A_2\cap\PSL_2(q)$ are their $A_4$ subgroups, whose
+only subgroups of order $4$ are their normal Klein four subgroups. If
+$|D|=12$, then $D$ is the $A_4$ of both groups. If $|D|=8$, then $D$
+contains transpositions, so $D\cap\PSL_2(q)$ has order $4$ and is the
+normal Klein four of both groups. In either case $A_2$ normalises $V$,
+so $A_2\le A$, a contradiction. Hence $|D|\le6$, and $|D|=6$ forces
+$D\cong S_3$.
+
+\emph{Order $6$.} The four $S_3$ subgroups of $A$ are conjugate in $A$,
+so replacing $g$ by $a_1ga_2^{-1}$ with $a_1,a_2\in A$, which does not
+change $AgA$, we may assume that $g$ normalises $K$. Every automorphism of
+$S_3$ is inner, so $N_{G_q}(K)=K\,C_{G_q}(K)$. The elements of $K$ are the
+matrices $\operatorname{sgn}(\pi)P_\pi$, $\pi\in S_3$, so a matrix commutes
+with $K$ exactly when it commutes with every permutation matrix $P_\pi$,
+that is, when it is constant on the two orbits of $S_3$ on index pairs:
+the commutant is $\{aI+bJ\}$, with $J$ the all-ones matrix. For
+$M=aI+bJ$, orthogonality gives $a^2=1$ and $b(2a+3b)=0$; since $q\ne3$,
+$M$ acts by $a+3b$ on $(1,1,1)$ and by $a$ on the complementary plane
+$x+y+z=0$, so determinant one gives $a+3b=1$. The solutions are $I$ and
+$H$. Hence $C_{G_q}(K)=\{1,h\}$, $N_{G_q}(K)=K\sqcup Kh$, and $g\in Kh$
+because $g\notin A$. Therefore $AgA=AhA$; writing $g=ahb$ with $a,b\in A$
+gives $A_2=a(hAh^{-1})a^{-1}$, so $(A,A_2)=a(A,hAh^{-1})a^{-1}$.
+
+\emph{Count.} As $N_{G_q}(A)=A$, the map $gA\mapsto gAg^{-1}$ is
+injective. The subgroups $A_2$ with $|A\cap A_2|=6$ are the images of the
+cosets in $AhA/A$, of which there are $[A:K]=4$ by
+\Cref{lem:octahedral-construction}.
+\end{proof}
+
+\subsection{Compression and the arithmetic spectral input}
+Put $\mu=\frac14\sum_{s\in S}\delta_s$ and let $e_A$ denote the
+uniform average over $A$ in $\C[G_q]$.
+
+\begin{lemma}[The compression identity]
+\label{lem:octahedral-compression}
+In the group algebra,
+\begin{equation}\label{eq:octahedral-compression}
+ \mu e_A=e_A\mu=e_Ahe_A.
+\end{equation}
+Consequently $\rho(\mu)$ commutes with $P_A$ and its restriction to
+$V_\rho^A$ is $P_A\rho(h)P_A$, whose norm equals $\opn{P_AP_B}$.
+\end{lemma}
+\begin{proof}
+Conjugation invariance of $S$ gives commutation with $A$. Averaging
+$ahe_A$ over $a\in A$ visits each of the four cosets in
+\Cref{lem:octahedral-construction} equally often, proving
+$e_Ahe_A=\frac14\sum_{s\in S}se_A$. Apply $\rho$ and
+\Cref{cor:double-coset-angle}.
+\end{proof}
+
+\begin{proposition}[Quaternionic Ramanujan input]
+\label{prop:octahedral-arithmetic}
+For $\chi_q(g)$ the determinant-square character of $G_q$ and
+$\epsilon_q=(3/q)$, the operator $\rho(\mu)$ has norm at most
+$\sqrt3/2$ on every irreducible $\rho\notin\{\mathbf1,\chi_q\}$.
+On those two characters its values are $1$ and $\epsilon_q$.
+\end{proposition}
+\begin{proof}
+We apply the theorem of Davidoff--Sarnak--Valette
+\cite[Theorem 4.2.2]{DSV2003}. Its hypotheses are distinct odd primes
+$p,q$ with $q>2\sqrt p$, and its distinguished norm-$p$ generators
+are specified in Section~2.6 of that reference. For $p=3$ they are
+exactly the four classes of $\pm i\pm j\pm k$, so every prime here
+satisfies the hypotheses. Remark~4.4.7 of the same reference derives the
+Ramanujan bound from Eichler's theorem on weight-two cusp forms.
+
+The vertex set of the walk follows from the construction. The set $S$ is
+stable under conjugation by $A$ and contains $h$, so $\langle S\rangle$ is
+normalised by $\langle A,h\rangle=G_q$ and is a non-trivial normal subgroup
+of $\PGL_2(q)$. Since $\PSL_2(q)$ is simple with trivial centraliser in
+$\PGL_2(q)$, $\langle S\rangle$ contains $\PSL_2(q)$. Every $s\in S$ has
+determinant class $3$; hence $\langle S\rangle=\PSL_2(q)$ when
+$\epsilon_q=1$ and $\langle S\rangle=\PGL_2(q)$ when $\epsilon_q=-1$. These
+are the two vertex sets in the cited theorem, and the external input is
+the spectral bound alone.
+
+If $\epsilon_q=-1$, their Cayley graph on $G_q$ is connected,
+bipartite and $4$-regular, with all eigenvalues other than $\pm4$
+bounded in absolute value by $2\sqrt3$. The exceptional normalized
+eigenspaces are the constants and $\chi_q$.
+If $\epsilon_q=1$, the theorem gives a connected nonbipartite
+Ramanujan graph on $\PSL_2(q)$. On $G_q$ the same walk is the union
+of two copies, so the exceptional eigenspace at $1$ is spanned by
+the constants and $\chi_q$, and there is no eigenvalue $-1$.
+The regular representation contains every irreducible, giving the
+assertion. In both cases each $s\in S$ has determinant square class $3$.
+\end{proof}
+
+The compression identity \eqref{eq:octahedral-compression} identifies the
+Hecke operator. Left multiplication
+by the fixed set $S$ on the cosets $G_q/A$ is generally a different
+operator from the Hecke adjacency. For $q=5$, those two unnormalized
+spectra are respectively $\{4,3,3,3,-1\}$ and
+$\{4,-1,-1,-1,-1\}$. The latter graph is $K_5$.
+
+\begin{theorem}[Sharp angle for the natural pair]
+\label{thm:octahedral-sharp}
+For the pair in \Cref{lem:octahedral-construction}, set
+\[
+ c_q=\max_{\rho\in\widehat{G_q},\,\rho\ne\mathbf1}
+          \opn{P_A^\rho\rho(h)P_A^\rho}.
+\]
+Then, for every pair $A_1,A_2$ of exterior octahedral subgroups of $G_q$
+with $|A_1\cap A_2|=6$,
+\[
+ \max_{\rho\ne\mathbf1}\opn{P_{A_1}^\rho P_{A_2}^\rho}
+ =c_q=\max_{\rho\ne\mathbf1}\opn{P_A^\rho P_B^\rho}\le\frac{\sqrt3}{2},
+ \qquad
+ \lim_{q\to\infty}c_q
+       =\frac{\sqrt3}{2}.
+\]
+Thus the constant is best possible uniformly over this family.
+\end{theorem}
+\begin{proof}
+By \Cref{prop:octahedral-cap6}, $(A_1,A_2)=x(A,B)x^{-1}$ for some
+$x\in G_q$, and $P_{xAx^{-1}}^\rho=\rho(x)P_A^\rho\rho(x)^{-1}$; this
+gives the first equality in every representation. It remains to treat
+$(A,B)$. For $\rho\notin\{\mathbf1,\chi_q\}$, the compression identity and
+\Cref{prop:octahedral-arithmetic} give the upper bound. On $\chi_q$,
+$P_A=0$ because $A$ is exterior, so this character contributes zero.
+
+For the lower bound, define $X_q$ with vertices the left cosets $xA$,
+and neighbours $xsA$ for $s\in S$. This is independent of the
+representative $x$, since $S$ is invariant under conjugation by $A$.
+The four neighbours are distinct and none is $xA$, by
+\Cref{lem:octahedral-construction}. The relation is symmetric because
+$h^{-1}=h$ and $AhA=(AhA)^{-1}$. The graph is connected because
+$\langle A,h\rangle=G_q$, and has $\abs{G_q}/24$ vertices.
+On functions on $G_q$ invariant under right multiplication by $A$,
+its normalized adjacency is the restriction of the \emph{right}
+convolution
+\[
+ (Wf)(x)=\frac14\sum_{s\in S}f(xs).
+\]
+Under the finite Peter--Weyl decomposition, the multiplicity spaces of
+this coset representation are $V_\rho^A$ (or their duals, with identical
+norms), and the blocks are the compressions
+$P_A\rho(h)P_A$. Hence the absolute nonconstant spectral radius of
+$X_q$ is $4c_q$. The trivial representation contributes just the
+constant functions, and $\chi_q$ has no $A$-fixed vectors.
+Alon--Boppana~\cite[Theorem 1.3.1]{DSV2003}, applied to these connected
+loopless $4$-regular graphs with vertex count tending to infinity,
+gives $\liminf 4c_q\ge2\sqrt3$. Together with the upper bound this
+proves the limit.
+\end{proof}
+
+\subsection{From angles to tree blocks}
+The minimum fixed-space angle $\theta_q=\arccos c_q$ satisfies
+$\theta_q\ge\pi/6$ and $\theta_q\to\pi/6$ by
+\Cref{thm:octahedral-sharp}. Since
+$V_\rho^A\cap V_\rho^B=V_\rho^{G_q}=0$ for every non-trivial irreducible,
+these are Friedrichs angles, with angle $\pi/2$ when a fixed space is zero.
+This angular separation controls how two subgroup averages interact.
+The following estimate transfers it to tree blocks that
+approximate those averages.
+
+\begin{lemma}[Quantitative gluing]
+\label{lem:octahedral-gluing}
+Let $P,Q$ be orthogonal projections with $\opn{PQ}\le c<1$. Suppose
+$X=P+R$, $Y=Q+S$, where
+$PR=RP=QS=SQ=0$ and $\opn R,\opn S\le\lambda<1$. Then
+\begin{equation}\label{eq:octahedral-gluing}
+ \opn{XYX^\dagger Y^\dagger}^2
+ \le1-\frac{(1-\lambda)(1-c)}{8(1+\lambda)}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Put $g=1-\lambda^2$. Each factor $Z$ with associated projection $F$
+satisfies
+\[
+ \norm w^2-\norm{Zw}^2\ge g\norm{(I-F)w}^2,
+ \qquad \norm{w-Zw}\le(1+\lambda)\norm{(I-F)w}.
+\]
+Apply the four factors in their actual order to a unit $v$, and denote
+their norm-squared losses by $e_j\ge0$. Their sum is
+$E=1-\norm{XYX^\dagger Y^\dagger v}^2$.
+At each step, telescoping back to $v$ and Cauchy--Schwarz give
+\[
+ \norm{(I-F)v}\le\frac{1+\lambda}{\sqrt g}
+             \sum_{i\le j}\sqrt{e_i}
+       \le\frac{2(1+\lambda)}{\sqrt g}\sqrt E.
+\]
+Both $P$ and $Q$ occur. Also $\opn{P+Q}\le1+c$: the map
+$v\mapsto(Pv,Qv)$ has squared norm bounded by that of the block matrix
+with identity diagonal and off-diagonal blocks $PQ,QP$.
+Consequently
+\[
+ 1-c\le\norm{(I-P)v}^2+\norm{(I-Q)v}^2
+       \le\frac{8(1+\lambda)^2}{g}E.
+\]
+Taking the supremum over $v$ proves \eqref{eq:octahedral-gluing}.
+\end{proof}
+
+\begin{corollary}[Uniform contraction for natural-pair blocks]
+\label{cor:octahedral-block}
+Suppose a valid level-$3$ tree $\tau$ has level-$2$ leaf subgroups
+$A,B\cong S_4$, exterior with $|A\cap B|=6$, and all leaves are exterior
+involutions. For every non-trivial $\rho$,
+\[
+ \opn{M_\tau(\rho)}\le\kappa,
+ \qquad
+ \kappa=\left(1-\frac{183}{1736}
+                       \left(1-\frac{\sqrt3}{2}\right)\right)^{1/2}<1.
+\]
+For a valid level-$m$ tree, $m\ge3$, all of whose level-$3$ sub-blocks
+have this property, replace $\lambda$ by $\kappa$ and $D$ by $3$ in
+\Cref{prop:quant}.
+\end{corollary}
+\begin{proof}
+On the fixed space of its leaf subgroup, each level-$2$ operator is the
+identity. On the orthogonal complement its norm is at most
+$\lambda=17/200$: this is a finite rational certificate on the four
+non-trivial irreducibles of $S_4$, over its $432$ valid ordered
+transposition configurations generating $S_4$. The exact certificate
+described in \Cref{sec:computation} constructs rational matrices with
+invariant Gram matrices $G_\pi$ and verifies all principal minors of
+$(17/200)^2G_\pi-D^tG_\pi D$ are nonnegative. Restriction of any ambient
+unitary representation to $S_4$ decomposes into these irreducibles and
+the trivial one; hence the certificate applies in every ambient $G_q$.
+Both invariant subspaces are preserved, so the hypotheses of
+\Cref{lem:octahedral-gluing} hold. Insert $c=\sqrt3/2$ from
+\Cref{thm:octahedral-sharp}. The last assertion follows by expanding
+into the level-$3$ blocks, as in \Cref{prop:quant}.
+\end{proof}
+
+The sharp angle estimate and the finite $S_4$ certificate thus give the
+explicit contraction bound $\kappa$ for these octahedral blocks. Applying
+\Cref{prop:stability} inside $S_4$ also gives a purely analytic, weaker
+constant in the same corollary.
