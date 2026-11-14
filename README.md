@@ -91,10 +91,10 @@ Individual scripts can be run from `artifact/scripts/`.
 
 ## Versions
 
-| Version | Date | Contents |
-|---|---|---|
-| 2.0 | November 2026 | Article (35 pages) with a rewritten introduction and literature review; extended version (48 pages); artifact unchanged |
-| 1.0 | 30 October 2026 | First public version (42 pages) and artifact |
+| Version | Date | Contents | DOI |
+|---|---|---|---|
+| 2.0 | 13 November 2026 | Article (35 pages) with a rewritten introduction and literature review; extended version (48 pages); artifact unchanged | [10.5281/zenodo.24212029](https://doi.org/10.5281/zenodo.24212029) |
+| 1.0 | 30 October 2026 | First public version (42 pages) and artifact | [10.5281/zenodo.23820592](https://doi.org/10.5281/zenodo.23820592) |
 
 Archived at Zenodo, all versions: DOI
 [10.5281/zenodo.23820591](https://doi.org/10.5281/zenodo.23820591).
